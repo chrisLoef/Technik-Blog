@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @rent.title
+%p
+  %b Start date:
+  = @rent.start_date
+%p
+  %b End date:
+  = @rent.end_date
+%p
+  %b Notiz:
+  = @rent.notiz
+%p
+  %b Confirmed:
+  = @rent.confirmed
+
+= link_to 'Edit', edit_rent_path(@rent)
+\|
+= link_to 'Back', rents_path

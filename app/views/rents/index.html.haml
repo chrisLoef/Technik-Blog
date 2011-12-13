@@ -1,0 +1,27 @@
+%h1 Listing rents
+
+%table
+  %tr
+    %th Title
+    %th Start date
+    %th End date
+    %th Notiz
+    %th Confirmed
+    %th
+    %th
+    %th
+
+  - @rents.each do |rent|
+    %tr
+      %td= rent.title
+      %td= rent.start_date
+      %td= rent.end_date
+      %td= rent.notiz
+      %td= rent.confirmed
+      %td= link_to 'Show', rent
+      %td= link_to 'Edit', edit_rent_path(rent)
+      %td= link_to 'Destroy', rent, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Rent', new_rent_path
