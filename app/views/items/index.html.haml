@@ -1,23 +1,13 @@
-%h1 Listing items
+%h1 Unser Inventar
 
 %table
   %tr
     %th Name
-    %th Place
-    %th Available
-    %th
-    %th
-    %th
+    %th Ort
+    %th Verfügbar?
 
   - @items.each do |item|
     %tr
       %td= item.name
       %td= item.place
       %td= item.available
-      %td= link_to 'Show', item
-      %td= link_to 'Edit', edit_item_path(item)
-      %td= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
-= link_to 'New Item', new_item_path

@@ -14,6 +14,12 @@ body {
 	font:normal 12px/1.8em Arial, Helvetica, sans-serif;
 }
 
+h1 {
+	font-size:30px;	
+	color:#386baa;
+	text-align:center;
+}
+
 #main {
 	background-color:#383a3b;
 	width:100%;
@@ -76,14 +82,23 @@ body {
 	padding:0px;
 	float:left;
 	display:inline;
+}
+
+#nav ul li a {
 	color:#ffffff;
 	font-size:25px;
+	text-decoration:none;
 }
 
 #content {
+	width:100%;
+	color:#386baa;
 }
 
 #content_small {
+	width:970px;
+	margin:86px auto;
+	background-color:#ffffff;
 }
 
 
